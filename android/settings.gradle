@@ -1,0 +1,7 @@
+rootProject.name = 'TestApp'
+
+include ':app'
+include ':react-native-share-extension'
+project(':react-native-share-extension').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-share-extension/android')
+include ':react-native-navigation'
+project(':react-native-navigation').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-navigation/android/app')
